@@ -1,6 +1,6 @@
 body {
     /* background-color: rgb(41, 35, 46); */
-    background: linear-gradient(to bottom, rgb(255, 185, 185), 1%, rgb(41, 35, 46));
+    background: linear-gradient(to top, rgb(255, 185, 185), 1%, rgb(41, 35, 46));
     --white: rgb(219, 219, 219);
     --purple: rgb(41, 35, 46);
     color: var(--white);
@@ -27,15 +27,25 @@ p{
     font-size: larger;
 }
 
-img{
+.pro-img{
     display: block;
-    height: 5em;
-    width: 5em;
-    border-radius: 50%;
+    width: 100%; /* Makes the image fill the div width */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover;
+    /* border-radius: 50%; */
     margin-right: auto;
     margin-left: auto;
-
 }
+
+.circle {
+    width: 5em;  /* Adjust the size as needed */
+    height: 5em; /* Ensures it's a perfect square */
+    overflow: hidden; /* Hides the parts of the image that go outside the circle */
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
 hr{
     margin-top: 10%;
@@ -43,7 +53,7 @@ hr{
 }
 #button-cont{
     display: flex;
-    width: 45%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
@@ -51,8 +61,9 @@ hr{
 
 button{
     text-align: center;
-    height: 4em;
-    width: 20em;
+    font-size: x-large;
+    height: 3em;
+    width: 12em;
     border-radius: 3em;
 }
 
@@ -66,7 +77,7 @@ button:hover{
     border: none;
 }
 
-#doc-btn{
+#med-btn{
     color: var(--white);
     background-color: transparent;
     border: 3px solid darkmagenta;
@@ -82,4 +93,34 @@ button:hover{
     /* background-color: rgb(245, 245, 245); */
     box-shadow: 0px, 0px, 5px, 5px rgba(93, 0, 255, 0.5);
     color: var(--white);
+}
+
+#logo {
+    width: 20em;
+    height: 10em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.demo img {
+    width: 30%;
+    height: 5%;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+.names {
+    text-align: center;
 }

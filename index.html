@@ -3,45 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time climb</title>
+    <title>Time Climb</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 id="title">Time Climb</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+    <img id='logo' src="./ReadMeUtils/timeclimblogo.png">
+    <h2>A tool to help visualize your AWS Step Function latencies</h2>
+    <br><br>
+    <h3>For more information and detailed setup instructions, see below for our repository. Please also see below for our Medium article.</h3>
     <div id="button-cont">
         <a target="_blank" href="https://github.com/oslabs-beta/TimeClimb">
-            <button id="repo-btn">Repo</button>
+            <button id="repo-btn"><b>GitHub Repository</b></button>
+        </a>
+        <a href="">
+            <button id="med-btn"><b>Medium Article</b></button>
         </a>
         
-        <button id="doc-btn">Docker</button>
     </div>
 
     <hr>
     <h1>About</h1>
-    <p>Cursus convallis tristique aliquet augue malesuada elit conubia eros. Massa felis at penatibus tristique cubilia nascetur sit facilisis. Himenaeos tellus dictumst maecenas placerat eget condimentum a eleifend. Odio nisi habitant pharetra id erat facilisi vehicula. Feugiat facilisi curae cubilia quisque platea auctor viverra dictum. Mus ipsum ad natoque erat cursus ornare justo lorem. Eros phasellus lacus nascetur interdum penatibus, dictumst consequat fusce curabitur. Magna eu sagittis sed inceptos risus ipsum blandit lacus pulvinar.</p>
+    <p id="About">TimeClimb helps visualize AWS Step Function latency averages over custom time ranges (day, week, month, or year), displaying overall step function and individual step latencies. Users can view line charts for time-based latency trends and click on individual steps to see detailed latency metrics on a line chart. A heat map displaying each step's latencies over the selected period of time will display by default.</p>
     
+    <br><br>
+
     <hr>
+    <h1>Demo</h1>
+    <div class="demo">
+        <img src="./ReadMeUtils/slider.gif">
+        <img src="./ReadMeUtils/steplatencychart.gif">
+        <img src="./ReadMeUtils/stepLatencyHeat.gif">
+        <img src="./ReadMeUtils/timePeriodAdjust.gif">
+    </div>
+
+    <hr>
+    <h1>Meet the Team</h1>
     <div id="card-cont">
         <div class="card">
-            <img src="https://img.freepik.com/premium-vector/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-vector-illustration_561158-4195.jpg?semt=ais_hybrid" alt="not empty">
-            <p>Name here</p>
+            <div class="circle">
+                <img class="pro-img" src="./ReadMeUtils/alexheadshot2022.jpg">
+            </div>
+            <p class="names">Alex Stewart <br> alex_stewart220@yahoo.com</p>
         </div>
         <div class="card">
-            <img src="https://img.freepik.com/premium-vector/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-vector-illustration_561158-4195.jpg?semt=ais_hybrid" alt="not empty">
-            <p>Name here</p>
+            <div class="circle">
+                <img class="pro-img" src="./ReadMeUtils/andrew-square-01.jpg">
+            </div>
+            <p class="names">Andrew Mott <br> andrew@andrewmott.com</p>
         </div>
         <div class="card">
-            <img src="https://img.freepik.com/premium-vector/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-vector-illustration_561158-4195.jpg?semt=ais_hybrid" alt="not empty">
-            <p>Name here</p>
+            <div class="circle">
+                <img class="pro-img" src="./ReadMeUtils/450019760_1018893599672258_2145271535824368234_n.jpg">
+            </div>
+            <p class="names">Austin Cheng <br> austincheng25@gmail.com</p>
         </div>
         <div class="card">
-            <img src="https://img.freepik.com/premium-vector/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-vector-illustration_561158-4195.jpg?semt=ais_hybrid" alt="not empty">
-            <p>Name here</p>
+            <div class="circle">
+                <img class="pro-img" src="ReadMeUtils/PXL_20240726_193716333~2.jpg" alt="not empty">
+            </div>
+            <p class="names">Paul Uhlenkott <br> pauluhlenkott@gmail.com</p>
         </div>
         <div class="card">
-            <img src="https://img.freepik.com/premium-vector/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-vector-illustration_561158-4195.jpg?semt=ais_hybrid" alt="not empty">
-            <p>Name here</p>
+            <div class="circle">
+                <img class="pro-img" src="./ReadMeUtils/20241011_204037.jpg">
+            </div>
+            <p class="names">Sharon Patterson <br> sharonpatterson808@gmail.com</p>
         </div>
     </div>
     
