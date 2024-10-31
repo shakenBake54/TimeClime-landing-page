@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(41, 35, 46);
+    /* border: 5px solid white; */
+}
+
+#title{
+    color: pink;
+    box-shadow: 0px, 0px, 5px, 5px, white;
+    text-align: center;
+    font-size: 7em;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+#button-cont{
+    display: flex;
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+button{
+    text-align: center;
+    height: 4em;
+    width: 20em;
+    border-radius: 3em;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+#repo-btn{
+    color: black;
+    background-color: darkmagenta;
+    border: none;
+}
+
+#doc-btn{
+    color: white;
+    background-color: transparent;
+    border: 3px solid darkmagenta;
+}
