@@ -1,20 +1,46 @@
 body {
-    background-color: rgb(41, 35, 46);
+    /* background-color: rgb(41, 35, 46); */
+    background: linear-gradient(to bottom, rgb(255, 185, 185), 1%, rgb(41, 35, 46));
+    --white: rgb(219, 219, 219);
+    --purple: rgb(41, 35, 46);
+    color: var(--white);
     /* border: 5px solid white; */
 }
 
 #title{
-    color: pink;
+    /* color: pink; */
+    text-shadow:
+    2px 2px 2px black,
+    4px 4px 2px black;
     box-shadow: 0px, 0px, 5px, 5px, white;
     text-align: center;
     font-size: 7em;
 }
 
 h2{
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
+p{
+    color: var(--white);
+    font-size: larger;
+}
+
+img{
+    display: block;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
 #button-cont{
     display: flex;
     width: 45%;
@@ -41,7 +67,19 @@ button:hover{
 }
 
 #doc-btn{
-    color: white;
+    color: var(--white);
     background-color: transparent;
     border: 3px solid darkmagenta;
+}
+
+#card-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card{
+    /* background-color: rgb(245, 245, 245); */
+    box-shadow: 0px, 0px, 5px, 5px rgba(93, 0, 255, 0.5);
+    color: var(--white);
 }
